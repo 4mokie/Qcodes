@@ -147,7 +147,7 @@ def plot_by_id(run_id: int,
     dataset = load_by_id(run_id)
     experiment_name = dataset.exp_name
     sample_name = dataset.sample_name
-    title = f"Run #{run_id}, Experiment {experiment_name} ({sample_name})"
+    title = '' #f"Run N{run_id}, Experiment {experiment_name} ({sample_name})"
 
     alldata = get_data_by_id(run_id)
     nplots = len(alldata)
